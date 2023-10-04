@@ -1,0 +1,54 @@
+body{ 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    animation: backgroundAnimation 10s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #121212;
+    }
+    50% {
+        background-color: #0A0A0A;
+    }
+    100% {
+        background-color: #121212;
+    }
+}
+
+h1, h3 {
+    color: #3EC6E0;
+}
+
+#colorInput {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#colorDisplay {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #121212;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3EC6E0, #2B2B2B);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: rotateColor 5s linear infinite;
+}
+
+@keyframes rotateColor {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
